@@ -3,9 +3,10 @@
 :root{
 --pale-blue: hsl(225, 100%, 94%);
 --bright-blue: hsl(245, 75%, 52%);
---very-pale blue: hsl(225, 100%, 98%);
+--very-pale-blue: hsl(225, 100%, 98%);
 --desaturated-blue: hsl(224, 23%, 55%);
 --blue: hsl(223, 47%, 23%);
+--dark-blue: hsl(223, 47%, 23%);
 }
 
 *{
@@ -29,6 +30,7 @@ body {
     color: var(--desaturated-blue);
     border-radius: 20px;
     overflow: hidden;
+    margin: 50px auto;
 }
 
 .title{
@@ -43,6 +45,11 @@ body {
 
 .container{
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
 }
 
 .container > * {
@@ -61,6 +68,27 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.plan-container a {
+    color: var(--bright-blue);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.plan-container a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.plan-container strong {
+    color: var(--dark-blue);
+}
+
+.plan-description {
+    line-height: 20px;
+    margin-right: 75px;
 }
 
 button{
